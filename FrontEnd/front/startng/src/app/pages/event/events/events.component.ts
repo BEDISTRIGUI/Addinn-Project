@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-
 @Component({
-  selector: 'app-event',
-  templateUrl: './event.component.html',
-  styleUrls: ['./event.component.scss']
+  selector: 'app-events',
+  templateUrl: './events.component.html',
+  styleUrls: ['./events.component.scss']
 })
-export class EventComponent implements OnInit {
+export class EventsComponent implements OnInit {
 
+  
+
+  
   form : boolean = false;
  
   closeResult! : string;
@@ -38,6 +40,15 @@ export class EventComponent implements OnInit {
     cancel(){
       this.form = false;
     }
+    public file:any;
+  
+    fileChange(input){
+        const reader = new FileReader();
+        if (input.files.length) {       
+            this.file = input.files[0].name;            
+        }
+    }
 
+    removeFile():void{
+      this.file = '';}
 }
-

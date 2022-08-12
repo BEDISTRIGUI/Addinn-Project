@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-round btn-sm btn-success" (click)="open(mymodal1)">button name</button>
+            <br><br>
+            <ng-template #mymodal1 let-modal1>
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal-basic-title" >title</h4>
+                    <button type="button" class="close" aria-label="Close" (click)="modal1.dismiss('Cross click')">
+                        <span aria-hidden="true" (click)="cancel()">×</span>
+                    </button>
+                    
+    
+                </div>

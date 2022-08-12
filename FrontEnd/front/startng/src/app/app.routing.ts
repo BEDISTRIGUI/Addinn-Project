@@ -12,6 +12,9 @@ import { EventComponent } from './pages/event/event.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { TimesOffComponent } from './pages/tools/times-off/times-off.component';
 import { EmployeesComponent } from './pages/tools/employees/employees.component';
+import { AnnouncementComponent } from './pages/announcement/announcement.component';
+import { EventsComponent } from './pages/event/events/events.component';
+import { NewpostComponent } from './pages/newpost/newpost.component';
 
 
 
@@ -43,6 +46,9 @@ export const routes: Routes = [
       {path: "timesOff", component: TimesOffComponent},
       {path: "employees", component: EmployeesComponent},
       {path: "chat", component: ChatComponent},
+      {path: "events", component: EventsComponent},
+      {path: "announcement", component: AnnouncementComponent},
+      {path: "newpost", component: NewpostComponent},
   
 
     ]

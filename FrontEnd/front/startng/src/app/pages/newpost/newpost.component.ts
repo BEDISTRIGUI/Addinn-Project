@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-
 @Component({
-  selector: 'app-event',
-  templateUrl: './event.component.html',
-  styleUrls: ['./event.component.scss']
+  selector: 'app-newpost',
+  templateUrl: './newpost.component.html',
+  styleUrls: ['./newpost.component.scss']
 })
-export class EventComponent implements OnInit {
-
+export class NewpostComponent implements OnInit {
   form : boolean = false;
  
   closeResult! : string;
@@ -38,6 +36,4 @@ export class EventComponent implements OnInit {
     cancel(){
       this.form = false;
     }
-
 }
-

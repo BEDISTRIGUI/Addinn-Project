@@ -54,6 +54,9 @@ import { DocumentsComponent } from './pages/documents/documents.component';
 import { EventComponent } from './pages/event/event.component';
 
 import { SettingsComponent } from './pages/settings/settings.component';
+import { EventsComponent } from './pages/event/events/events.component';
+import { AnnouncementComponent } from './pages/announcement/announcement.component';
+import { NewpostComponent } from './pages/newpost/newpost.component';
 
 
  
@@ -109,8 +112,15 @@ import { SettingsComponent } from './pages/settings/settings.component';
     GestionRHComponent,
     DocumentsComponent,
     EventComponent,
+    EventsComponent,
+    AnnouncementComponent,
+    NewpostComponent,
+
    
     SettingsComponent,
+         EventsComponent,
+         AnnouncementComponent,
+         NewpostComponent,
   
   ],
   providers: [ 

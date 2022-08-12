@@ -53,7 +53,7 @@ export const verticalMenuItems = [
     new Menu (201, 'gestionRH', null, null, 'folder-o', null, false, 200)
 */
 new Menu (1, 'ADMIN_NAV.DASHBOARD', '/', null, 'tachometer', null, false, 0),
-new Menu (12, 'profile', '/profile', null, 'user', null, false, 0),
+new Menu (12, 'My profile', '/profile', null, 'user', null, false, 0),
 
 
 new Menu (20, 'employees', null, null, 'wrench', null, true, 0), 
@@ -122,7 +122,7 @@ export const horizontalMenuItems = [
 //     new Menu (74, 'Bubble Charts', '/charts/bubble', null, 'comment-o', null, false, 70)
 // ]
 new Menu (1, 'ADMIN_NAV.DASHBOARD', '/', null, 'tachometer', null, false, 0),
-new Menu (12, 'profile', '/profile', null, 'user', null, false, 0),
+new Menu (12, 'My profile', '/profile', null, 'user', null, false, 0),
 
 
 new Menu (20, 'employees', null, null, 'wrench', null, true, 0), 
