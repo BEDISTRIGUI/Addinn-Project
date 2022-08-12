@@ -47,6 +47,8 @@
     "ngx-toastr": "13.2.1",
     "ngx-validators": "5.3.0",
     "popper.js": "1.16.1",
+    "primeicons": "^5.0.0",
+    "primeng": "^14.0.0",
     "rxjs": "6.6.3",
     "tslib": "2.2.0",
     "web-animations-js": "2.3.2",

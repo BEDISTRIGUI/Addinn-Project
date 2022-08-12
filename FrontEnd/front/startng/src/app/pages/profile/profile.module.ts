@@ -5,15 +5,21 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { JobComponent } from './job/job.component';
+import { TimeOffComponent } from './time-off/time-off.component';
+import { MyDocumentsComponent } from './my-documents/my-documents.component';
 
 export const routes = [
   {
       path: '', 
       component: ProfileComponent,
       children:[
-        { path: '', redirectTo: 'projects', pathMatch: 'full'},
+        { path: '', redirectTo: 'profile', pathMatch: 'full'},
         { path: 'projects', component: ProjectsComponent, data: { breadcrumb: 'Projects' } },
-        { path: 'user-info', component: UserInfoComponent, data: { breadcrumb: 'User Information' } }
+        { path: 'user-info', component: UserInfoComponent, data: { breadcrumb: 'User Information' } },
+        {path: "my-documents", component: MyDocumentsComponent},
+        {path: "time-off", component: TimeOffComponent},
+        {path: "job", component: JobComponent},
       ]
   }
 ];
@@ -22,7 +28,7 @@ export const routes = [
   declarations: [
     ProfileComponent, 
     ProjectsComponent, 
-    UserInfoComponent
+    UserInfoComponent, JobComponent, TimeOffComponent, MyDocumentsComponent
   ],
   imports: [
     CommonModule,

@@ -15,6 +15,7 @@ import { EmployeesComponent } from './pages/tools/employees/employees.component'
 
 
 
+
 export const routes: Routes = [
   {
     path: '', 
@@ -43,7 +44,7 @@ export const routes: Routes = [
       {path: "timesOff", component: TimesOffComponent},
       {path: "employees", component: EmployeesComponent},
       {path: "chat", component: ChatComponent},
-  
+     
 
     ]
   },
